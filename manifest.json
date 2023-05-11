@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Jotunn",
+  "description": "This extension redirects you from online casino sites",
+  "version": "0.0.1",
+  "author": "@Jotunn",
+  "icons": {
+    "16": "icons/logo-16.png",
+    "32": "icons/logo-32.png",
+    "48": "icons/logo-48.png",
+    "128": "icons/logo-128.png"
+  },
+
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_title": "Klik!",
+    "default_popup": "popup.html"
+  }
+}
